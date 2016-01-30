@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+
+
+        #loading{
+            position: relative;
+
+            width:200px;
+            height:200px;
+            margin: 0 auto;
+            background: red;
+            -webkit-animation:loading-out 1s ease-in-out 1;/*动画晃动效果*/
+
+            /*-webkit-animation: loading 1s infinite linear;/!***一秒循环执行**!/*/
+
+        }
+        /*@-webkit-keyframes loading{/!**关键帧名称**!/*/
+            /*0%{-webkit-transform: rotate(0deg);}*/
+            /*100%{-webkit-transform: rotate(360deg);}*/
+        /*}*/
+
+        @-webkit-keyframes loading-out {
+            0% {
+                -webkit-transform: translateX(5px) rotate(5deg);
+            }
+            20% {
+                -webkit-transform: translateX(-5px) rotate(-5deg);
+            }
+            30% {
+                -webkit-transform: translateX(5px) rotate(5deg);
+            }
+            40% {
+                -webkit-transform: translateX(-5px) rotate(-5deg);
+            }
+            50% {
+                -webkit-transform: translateX(5px) rotate(5deg);
+            }
+            60% {
+                -webkit-transform: translateX(-5px) rotate(-5deg);
+            }
+            70% {
+                -webkit-transform: translateX(5px) rotate(5deg);
+            }
+            80% {
+                -webkit-transform: translateX(-5px) rotate(-5deg);
+            }
+            90% {
+                -webkit-transform: translateX(5px) rotate(5deg);
+            }
+            100% {
+                -webkit-transform: translateX(-5px) rotate(-5deg);
+            }
+        }
+        /*#loading:hover  {
+            -webkit-animation-name: loading-out;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-timing-function: ease-in-out;
+            -webkit-animation-iteration-count: 1;
+        }*/
+
+    </style>
+</head>
+
+<body>
+<div id="loading"></div>
+</body>
+
+</html>
